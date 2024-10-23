@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.border{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+    margin: 0%;
+    background-color: #D9D9D9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.unit{
+    margin-top: 40px;
+}
+.home{
+    margin-top: 5px;
+    padding: 10px;
+    padding-bottom: 390px;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+}
+.foot{
+    background-color: #D9D9D9;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot img {
+    width: 60px;
+    height: 60px;
+}
+

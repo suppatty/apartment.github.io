@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bills</title>
+    <link rel="stylesheet" href="../css/bills-mobile.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="border"> Subscription
+        <br>
+                <div class="unit">
+            Unit no.10
+                </div>
+            </div>
+
+            <div class="home">
+                Balance <div class="pesos">
+                    ₱1500.00
+                </div>
+                Due Data <div class="pesos">
+                    11/11/11
+                </div>
+                <div>
+                    <button onclick="openPopup()" class="btn" >receipt</button>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="uu"><a href="mobile-dashboard.html"><img src="../html/pic/home.png" alt="" class="homei"></a></div>
+                <div class="uu"><a href="bills-mobile.html"><img src="../html/pic/bills.png" alt="" class="bill"></a></div>
+                <div class="uu"><a href="report-mobile.html"><img src="../html/pic/pro.png" alt="" class="report"></a></div>
+                <div class="uu"><a href="profile-mobile.html"><img src="../html/pic/123.png" alt="" class="profile" ></a></div>
+            </div>
+
+
+            <script>
+                function openPopup() {
+                    Swal.fire({
+                        title: 'User Details',
+                        html: `
+                            <div class="containerr">
+                                <div class="info-row">
+                                    <label>Name:</label>
+                                    <span>Patrick</span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Unit No.:</label>
+                                    <span>10</span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Due Date:</label>
+                                    <span>2024-10-10</span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Balance:</label>
+                                    <span>150.00</span>
+                                </div>
+                            </div>
+                        `,
+                        showCloseButton: true,
+                        focusConfirm: false,
+                        confirmButtonText: 'Close'
+                    });
+                }
+            </script>
+
+
+</body>
+</html>
